@@ -24,6 +24,7 @@ int main(int argc, char *argv[]) {
 	[getPathToFrontFinderWindow() enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
 		NSString *url, *src, *ext, *srcWOExt, *dst;
 		BOOL isDir;
+		BOOL forceSymlink = 0 != (kCGEventFlagMaskAlternate & CGEventSourceFlagsState(kCGEventSourceStateCombinedSessionState));
 
 		url = [[[(FNReference *)obj URL] get] send];
 		src = [[NSURL URLWithString:url] path];
@@ -37,7 +38,7 @@ int main(int argc, char *argv[]) {
 					dst = [dst stringByAppendingPathExtension:ext];
 				}
 				if (![fileManager fileExistsAtPath:dst]) {
-					if (isDir) {
+					if (isDir || forceSymlink) {
 						[fileManager createSymbolicLinkAtPath:dst withDestinationPath:src error:nil];
 					} else {
 						[fileManager linkItemAtPath:src toPath:dst error:nil];
