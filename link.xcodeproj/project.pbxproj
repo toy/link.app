@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		B20FD98A12BE8E1E003CA6BD /* Appscript.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B20FD97112BE8E0E003CA6BD /* Appscript.framework */; };
+		B20FD99912BE8EA9003CA6BD /* Appscript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20FD97112BE8E0E003CA6BD /* Appscript.framework */; };
 		B22ACD0C12BE7CF200A9FE83 /* FNApplicationGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = B22ACD0212BE7CF200A9FE83 /* FNApplicationGlue.m */; };
 		B22ACD0D12BE7CF200A9FE83 /* FNCommandGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = B22ACD0412BE7CF200A9FE83 /* FNCommandGlue.m */; };
 		B22ACD0E12BE7CF200A9FE83 /* FNConstantGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = B22ACD0612BE7CF200A9FE83 /* FNConstantGlue.m */; };
 		B22ACD0F12BE7CF200A9FE83 /* FNReferenceGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = B22ACD0912BE7CF200A9FE83 /* FNReferenceGlue.m */; };
 		B22ACD1012BE7CF200A9FE83 /* FNReferenceRendererGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = B22ACD0B12BE7CF200A9FE83 /* FNReferenceRendererGlue.m */; };
 		B22ACD1212BE7D3700A9FE83 /* link.icns in Resources */ = {isa = PBXBuildFile; fileRef = B22ACD1112BE7D3700A9FE83 /* link.icns */; };
-		B22ACD1B12BE7D8C00A9FE83 /* Appscript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B22ACD1A12BE7D8C00A9FE83 /* Appscript.framework */; };
-		B22ACD3412BE7DA300A9FE83 /* Appscript.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B22ACD1A12BE7D8C00A9FE83 /* Appscript.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B22ACD3412BE7DA300A9FE83 /* Appscript.framework in CopyFiles */,
+				B20FD98A12BE8E1E003CA6BD /* Appscript.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +41,7 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* link-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "link-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* link.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = link.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20FD97112BE8E0E003CA6BD /* Appscript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Appscript.framework; path = /Users/toy/var/c/_frameworks/Appscript.framework; sourceTree = "<absolute>"; };
 		B22ACD0012BE7CF200A9FE83 /* FNAEMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNAEMConstants.h; sourceTree = "<group>"; };
 		B22ACD0112BE7CF200A9FE83 /* FNApplicationGlue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNApplicationGlue.h; sourceTree = "<group>"; };
 		B22ACD0212BE7CF200A9FE83 /* FNApplicationGlue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNApplicationGlue.m; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		B22ACD0A12BE7CF200A9FE83 /* FNReferenceRendererGlue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNReferenceRendererGlue.h; sourceTree = "<group>"; };
 		B22ACD0B12BE7CF200A9FE83 /* FNReferenceRendererGlue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNReferenceRendererGlue.m; sourceTree = "<group>"; };
 		B22ACD1112BE7D3700A9FE83 /* link.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = link.icns; sourceTree = "<group>"; };
-		B22ACD1A12BE7D8C00A9FE83 /* Appscript.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; name = Appscript.framework; path = /Users/toy/var/c/_frameworks/Appscript/build/Release_10.5_32_64_GC_embed/Appscript.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				B22ACD1B12BE7D8C00A9FE83 /* Appscript.framework in Frameworks */,
+				B20FD99912BE8EA9003CA6BD /* Appscript.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,9 +129,9 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B22ACD1A12BE7D8C00A9FE83 /* Appscript.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+				B20FD97112BE8E0E003CA6BD /* Appscript.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -230,6 +230,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../_frameworks/Appscript/build/Release_10.5_32_64_GC_embed\"",
+					"\"$(SRCROOT)/../_frameworks\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -250,7 +251,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../_frameworks/Appscript/build/Release_10.5_32_64_GC_embed\"",
+					"\"$(SRCROOT)/../_frameworks\"",
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
