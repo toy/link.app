@@ -6,7 +6,8 @@
 //  Copyright 2010 Ivan Kuchin. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
 #import "FNGlue.h"
 #import "NSArray+Map.h"
 
