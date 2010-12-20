@@ -8,11 +8,15 @@
 
 #import <Cocoa/Cocoa.h>
 #import "FNGlue.h"
+#import "NSArray+Map.h"
 
-NSArray* getPathToFrontFinderWindow(){
+NSArray* finderSelectionPaths(){
 	FNApplication *finder = [FNApplication applicationWithName: @"Finder"];
-	NSArray *paths = [[finder selection] getItem];
-
+	NSArray *references = [[finder selection] getItem];
+	NSArray *paths = [references mapUsingBlock:^(id obj, NSUInteger idx) {
+		NSString *url = [[[(FNReference *)obj URL] get] send];
+		return (id)[[NSURL URLWithString:url] path];
+	}];
 	return paths;
 }
 
@@ -21,13 +25,11 @@ int main(int argc, char *argv[]) {
 
 	NSFileManager *fileManager = [[NSFileManager alloc] init];
 
-	[getPathToFrontFinderWindow() enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-		NSString *url, *src, *ext, *srcWOExt, *dst;
+	[finderSelectionPaths() enumerateObjectsUsingBlock:^(id src, NSUInteger idx, BOOL *stop) {
+		NSString *ext, *srcWOExt, *dst;
 		BOOL isDir;
 		BOOL forceSymlink = 0 != (kCGEventFlagMaskAlternate & CGEventSourceFlagsState(kCGEventSourceStateCombinedSessionState));
 
-		url = [[[(FNReference *)obj URL] get] send];
-		src = [[NSURL URLWithString:url] path];
 		ext = [src pathExtension];
 		srcWOExt = [src stringByDeletingPathExtension];
 

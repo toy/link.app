@@ -17,6 +17,7 @@
 		B22ACD0F12BE7CF200A9FE83 /* FNReferenceGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = B22ACD0912BE7CF200A9FE83 /* FNReferenceGlue.m */; };
 		B22ACD1012BE7CF200A9FE83 /* FNReferenceRendererGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = B22ACD0B12BE7CF200A9FE83 /* FNReferenceRendererGlue.m */; };
 		B22ACD1212BE7D3700A9FE83 /* link.icns in Resources */ = {isa = PBXBuildFile; fileRef = B22ACD1112BE7D3700A9FE83 /* link.icns */; };
+		B2C72A1212BFB2DC0063F9BB /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C72A1112BFB2DC0063F9BB /* NSArray+Map.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +56,8 @@
 		B22ACD0A12BE7CF200A9FE83 /* FNReferenceRendererGlue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNReferenceRendererGlue.h; sourceTree = "<group>"; };
 		B22ACD0B12BE7CF200A9FE83 /* FNReferenceRendererGlue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNReferenceRendererGlue.m; sourceTree = "<group>"; };
 		B22ACD1112BE7D3700A9FE83 /* link.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = link.icns; sourceTree = "<group>"; };
+		B2C72A1012BFB2DC0063F9BB /* NSArray+Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Map.h"; sourceTree = "<group>"; };
+		B2C72A1112BFB2DC0063F9BB /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Map.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 			children = (
 				256AC3F00F4B6AF500CF3369 /* link_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
+				B2C72A1012BFB2DC0063F9BB /* NSArray+Map.h */,
+				B2C72A1112BFB2DC0063F9BB /* NSArray+Map.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 				B22ACD0E12BE7CF200A9FE83 /* FNConstantGlue.m in Sources */,
 				B22ACD0F12BE7CF200A9FE83 /* FNReferenceGlue.m in Sources */,
 				B22ACD1012BE7CF200A9FE83 /* FNReferenceRendererGlue.m in Sources */,
+				B2C72A1212BFB2DC0063F9BB /* NSArray+Map.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
